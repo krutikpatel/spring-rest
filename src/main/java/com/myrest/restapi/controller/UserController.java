@@ -44,18 +44,19 @@ public class UserController {
 	 * TODO: may be add the content type of this request
 	 */
 	@GetMapping("/users")
-	public List<User> retrieveAllUsers() {
-		return userRepository.retrieveAllUsers();
+	public ResponseEntity<Object> retrieveAllUsers() {
+		List<User> list = userRepository.retrieveAllUsers();
+		return ResponseEntity.ok(list);
 	}
 	
 	@GetMapping("/users/{id}")
-	public User getUser(@PathVariable long id) {
+	public ResponseEntity<Object> getUser(@PathVariable long id) {
 		User user = userRepository.findById(id);
 		
 		if(user == null)
 			throw new UserNotFoundException("User not found : id-"+ id);
 		
-		return user;
+		return ResponseEntity.ok(user);
 	}
 	
 	@DeleteMapping("/users/{id}")
