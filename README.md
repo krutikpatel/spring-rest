@@ -8,4 +8,6 @@ Features:
 * Javax Validations (more info : https://www.baeldung.com/javax-validation )
 * Swagger documentation
 * Unit testing REST API (and may be covered individual components)
-  - test guide : https://spring.io/guides/gs/testing-web/
+  - test guides : 
+    - https://spring.io/guides/gs/testing-web/
+    - https://howtodoinjava.com/spring-boot2/testing/spring-boot-mockmvc-example/
