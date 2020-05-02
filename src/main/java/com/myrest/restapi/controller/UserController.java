@@ -19,6 +19,17 @@ import com.myrest.restapi.exception.UserNotFoundException;
 import com.myrest.restapi.model.User;
 import com.myrest.restapi.repository.UserRepository;
 
+/*
+ * knote: 
+ * 		-The @RestController annotation from Spring Boot is basically a quick shortcut that saves us from 
+ * 			always having to define @ResponseBody.
+ * 		-Writing a JSON REST service in Spring Boot is simple, as that's its default opinion when Jackson is on the classpath.
+ * 
+ * 		-Spring Controllers : https://www.baeldung.com/spring-controllers
+ * 		-JSON CRUD : https://www.baeldung.com/spring-boot-json
+ * 
+ * 		-By default : contentType is JSON, if we return object
+ */
 @RestController
 public class UserController {
 	/* no need of service yet
@@ -29,6 +40,9 @@ public class UserController {
 	@Autowired
 	private UserRepository userRepository;
 
+	/*
+	 * TODO: may be add the content type of this request
+	 */
 	@GetMapping("/users")
 	public List<User> retrieveAllUsers() {
 		return userRepository.retrieveAllUsers();
@@ -53,18 +67,24 @@ public class UserController {
 		userRepository.deleteById(id);		
 	}
 	
+	/*
+	 * knote: various ways and things to return.
+	 * 		-ref: https://www.baeldung.com/spring-boot-json
+	 * 		-using ResponseEntity
+	 */
 	@PostMapping("/users")
-	//public ResponseEntity<Object> createUser(@Valid @RequestBody User user) {
-	public Long createUser(@Valid @RequestBody User user) {
+	public ResponseEntity<Object> createUser(@Valid @RequestBody User user) {
 		User savedUser = userRepository.save(user);
-		/*
+		
 		URI location = ServletUriComponentsBuilder
 			.fromCurrentRequest()
 			.path("/{id}")
 			.buildAndExpand(savedUser.getId()).toUri();
 		
-		return ResponseEntity.created(location).build();
-		*/
-		return savedUser.getId();
+		//knote: this is located under response headers -> location
+		//return ResponseEntity.created(location).build();
+
+		//knote: to return created user object Json, do this:
+		return ResponseEntity.created(location).body(savedUser);
 	}
 }
