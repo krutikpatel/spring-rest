@@ -1,6 +1,8 @@
 # spring-rest
 Springboot REST API with JPA and MongoDB examples
 
+Spring Initialzer deps : devtools, webMvc, H2, JPA, Mongo
+
 Features:
 * REST controllers
 * JPA data saving support
@@ -11,3 +13,5 @@ Features:
   - test guides : 
     - https://spring.io/guides/gs/testing-web/
     - https://howtodoinjava.com/spring-boot2/testing/spring-boot-mockmvc-example/
+
+Lots of Spring REST tutorials : https://www.baeldung.com/rest-with-spring-series
