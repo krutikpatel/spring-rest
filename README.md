@@ -14,5 +14,8 @@ Features:
   - test guides : 
     - https://spring.io/guides/gs/testing-web/
     - https://howtodoinjava.com/spring-boot2/testing/spring-boot-mockmvc-example/
-
+ * MongoDB support
+  - Good link: https://www.journaldev.com/18156/spring-boot-mongodb
+  
+  
 Lots of Spring REST tutorials : https://www.baeldung.com/rest-with-spring-series
