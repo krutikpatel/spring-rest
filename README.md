@@ -1,4 +1,4 @@
-# spring-rest
+# spring-rest (with RDBMS(JPA) and MongoDB)
 Springboot REST API with JPA and MongoDB examples
 
 Spring Initialzer deps : devtools, webMvc, H2, JPA, Mongo
@@ -19,7 +19,8 @@ Features:
   - Official doc : https://spring.io/projects/spring-data-mongodb#overview
     - https://docs.spring.io/spring-data/mongodb/docs/2.2.7.RELEASE/reference/html/#reference
     - https://docs.spring.io/spring-boot/docs/2.2.6.RELEASE/reference/html/howto.html#howto-use-spring-data-jpa--and-mongo-repositories
-  - Official samples: https://github.com/spring-projects/spring-data-examples/tree/master/mongodb  
+  - Official samples: https://github.com/spring-projects/spring-data-examples/tree/master/mongodb 
+  - Query details: https://docs.spring.io/spring-data/mongodb/docs/2.2.7.RELEASE/reference/html/#mongo.repositories
   
 ## Useful Links  
 Lots of Spring REST tutorials : https://www.baeldung.com/rest-with-spring-series
