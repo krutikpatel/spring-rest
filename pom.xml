@@ -11,6 +11,7 @@
 	<groupId>com.myrest</groupId>
 	<artifactId>restapi</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>restapi</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -64,6 +65,35 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
+			<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			
+			<!-- Docker image building step , Docker desktop should be running. Notice Goal, push is not required.
+			<plugin>
+				<groupId>com.spotify</groupId>
+				<artifactId>dockerfile-maven-plugin</artifactId>
+				<version>1.4.10</version>
+				<executions>
+					<execution>
+						<id>default</id>
+						<goals>
+							<goal>build</goal>
+							<goal>push</goal>  
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<repository>meetkrutik/${project.artifactId}</repository>
+					<tag>${project.version}</tag>
+					<skipDockerInfo>true</skipDockerInfo>
+				</configuration>
+			</plugin>
+			-->
 		</plugins>
 	</build>
 
