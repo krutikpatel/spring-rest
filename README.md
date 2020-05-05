@@ -21,7 +21,9 @@ Features:
     - https://docs.spring.io/spring-boot/docs/2.2.6.RELEASE/reference/html/howto.html#howto-use-spring-data-jpa--and-mongo-repositories
   - Official samples: https://github.com/spring-projects/spring-data-examples/tree/master/mongodb 
   - Query details: https://docs.spring.io/spring-data/mongodb/docs/2.2.7.RELEASE/reference/html/#mongo.repositories
-  
+* Docker file for docker image creation
+* Dockerrun.aws.json file for running it on Elastic Beanstalk
+
 ## Useful Links  
-Lots of Spring REST tutorials : https://www.baeldung.com/rest-with-spring-series
-Official Spring all Database examples: https://github.com/spring-projects/spring-data-examples/tree/master/
+- Lots of Spring REST tutorials : https://www.baeldung.com/rest-with-spring-series
+- Official Spring all Database examples: https://github.com/spring-projects/spring-data-examples/tree/master/
