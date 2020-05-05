@@ -22,6 +22,7 @@ Features:
   - Official samples: https://github.com/spring-projects/spring-data-examples/tree/master/mongodb 
   - Query details: https://docs.spring.io/spring-data/mongodb/docs/2.2.7.RELEASE/reference/html/#mongo.repositories
 * Docker file for docker image creation
+  - Ref: https://www.udemy.com/course/deploy-java-spring-boot-to-aws-amazon-web-service/learn/lecture/15443874#overview
 * Dockerrun.aws.json file for running it on Elastic Beanstalk
 
 ## Useful Links  
