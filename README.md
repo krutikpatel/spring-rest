@@ -23,6 +23,11 @@ Features:
   - Query details: https://docs.spring.io/spring-data/mongodb/docs/2.2.7.RELEASE/reference/html/#mongo.repositories
 * Docker file for docker image creation
   - Ref: https://www.udemy.com/course/deploy-java-spring-boot-to-aws-amazon-web-service/learn/lecture/15443874#overview
+  - https://www.baeldung.com/dockerizing-spring-boot-application
+  - sample run command
+    - docker run -d --publish=9999:5000 12653b725371
+    - 9999 is host port, 5000 is port in container where springboot server is listening
+
 * Dockerrun.aws.json file for running it on Elastic Beanstalk
 
 ## Useful Links  
