@@ -32,6 +32,7 @@ Features:
       - https://docs.mongodb.com/manual/tutorial/analyze-query-plan/
       - https://docs.atlas.mongodb.com/performance-advisor/schema-suggestions/
       - https://docs.mongodb.com/manual/indexes/
+      - http://learnmongodbthehardway.com/schema/indexes/#indexes
       
       
 * Docker file for docker image creation
