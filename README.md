@@ -33,7 +33,9 @@ Features:
       - https://docs.atlas.mongodb.com/performance-advisor/schema-suggestions/
       - https://docs.mongodb.com/manual/indexes/
       - http://learnmongodbthehardway.com/schema/indexes/#indexes
-      
+   
+   - Schema design:
+      - mongodb embedding vs linking (good topic for search and study)
       
 * Docker file for docker image creation
   - Ref: https://www.udemy.com/course/deploy-java-spring-boot-to-aws-amazon-web-service/learn/lecture/15443874#overview
