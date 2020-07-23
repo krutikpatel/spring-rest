@@ -14,7 +14,7 @@ Features:
   - test guides : 
     - https://spring.io/guides/gs/testing-web/
     - https://howtodoinjava.com/spring-boot2/testing/spring-boot-mockmvc-example/
-* MongoDB support
+## MongoDB support
   - Good link: https://www.journaldev.com/18156/spring-boot-mongodb
   - Official doc : https://spring.io/projects/spring-data-mongodb#overview
     - https://docs.spring.io/spring-data/mongodb/docs/2.2.7.RELEASE/reference/html/#reference
@@ -36,6 +36,7 @@ Features:
    
    - Schema design:
       - mongodb embedding vs linking (good topic for search and study)
+   - Mongodb atlas, had very good sample db data, you can study document structure and index examples and relationship between collections !   
       
 * Docker file for docker image creation
   - Ref: https://www.udemy.com/course/deploy-java-spring-boot-to-aws-amazon-web-service/learn/lecture/15443874#overview
