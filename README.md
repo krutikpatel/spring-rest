@@ -21,6 +21,18 @@ Features:
     - https://docs.spring.io/spring-boot/docs/2.2.6.RELEASE/reference/html/howto.html#howto-use-spring-data-jpa--and-mongo-repositories
   - Official samples: https://github.com/spring-projects/spring-data-examples/tree/master/mongodb 
   - Query details: https://docs.spring.io/spring-data/mongodb/docs/2.2.7.RELEASE/reference/html/#mongo.repositories
+  - Indexing : to improve performance on queries, use field by which you query as "index". 
+    - Use @Indexed annotation for single field index
+    - Use @CompoundIndexes and @CompoundIndex on model class, for compound index, index with multiple fields.
+    - Links:
+      - https://www.baeldung.com/spring-data-mongodb-index-annotations-converter
+      - https://docs.spring.io/spring-data/data-mongodb/docs/current/api/org/springframework/data/mongodb/core/index/CompoundIndex.html
+      - https://docs.mongodb.com/manual/tutorial/create-indexes-to-support-queries/
+      - https://docs.mongodb.com/manual/tutorial/analyze-query-plan/
+      - https://docs.atlas.mongodb.com/performance-advisor/schema-suggestions/
+      - https://docs.mongodb.com/manual/indexes/
+      - Using multiple fields to query: easy too : https://www.baeldung.com/queries-in-spring-data-mongodb --> JSON query methods
+      
 * Docker file for docker image creation
   - Ref: https://www.udemy.com/course/deploy-java-spring-boot-to-aws-amazon-web-service/learn/lecture/15443874#overview
   - https://www.baeldung.com/dockerizing-spring-boot-application
